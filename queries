@@ -1,0 +1,11 @@
+
+
+### Purpose:  Display flows within the org.
+### Author:  Robert Lazo
+### Date:  20 March 2026
+
+SELECT Id, Label, ApiName, ProcessType, IsActive, VersionNumber, TriggerObjectOrEventLabel,LastModifiedBy, LastModifiedDate, Description
+FROM FlowDefinitionView
+WHERE IsActive = true
+ORDER BY Label
+
